@@ -8,7 +8,20 @@ For a given natural number greater than zero return:
 */
 
 function fizzbuzz(number) {
-
+  // return number;
+  if (number % 15 == 0) {
+    return "fizzbuzz";
+  } else if (number % 3 == 0) {
+    return "fizz";
+  } else if (number % 5 == 0) {
+    return "buzz";
+  }
+  return number;
+  //   } else if (number % 5 == 0) {
+  //     return "buzz";
+  //   } else if (number % 15 == 0) {
+  //     return "fizzbuzz";
+  //   }
 }
 
-module.exports = fizzbuzz
+module.exports = fizzbuzz;
